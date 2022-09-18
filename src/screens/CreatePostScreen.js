@@ -42,8 +42,6 @@ const CreatePostScreen = () => {
     // const insets = useSafeAreaInsets();
     return (
         <View style={styles.container}>
-            <Text>Create Post Screen</Text>
-
             <View style={styles.header}>
                 <Image
                     source={{ uri: user.image }}
@@ -81,7 +79,6 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         width: '100%',
         padding: 10,
-        paddingTop: 30,
     },
     header: {
         padding: 10,

@@ -6,6 +6,7 @@ import Navigator from './src/navigation';
 export default function App() {
     return (
         <View style={styles.container}>
+            <StatusBar style='auto' />
             <Navigator />
         </View>
     );
@@ -13,10 +14,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 50,
+        // marginTop: 50,
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
     },
 });
