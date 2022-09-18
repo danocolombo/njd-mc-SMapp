@@ -66,7 +66,12 @@ const ProfileScreenHeader = ({ user, isMe = false }) => {
                                 Add to Story
                             </Text>
                         </Pressable>
-                        <Pressable style={styles.button}>
+                        <Pressable
+                            style={styles.button}
+                            onPress={() =>
+                                navigation.navigate('Update Profile')
+                            }
+                        >
                             <MaterialCommunityIcons
                                 name='pencil'
                                 size={16}
