@@ -10,8 +10,8 @@ const Stack = createNativeStackNavigator();
 const Navigator = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Feed'>
-                <Stack.Screen name='Profile' component={ProfileScreen} />
+            {/* <Stack.Navigator initialRouteName='Feed'> */}
+            <Stack.Navigator>
                 <Stack.Screen
                     name='Feed'
                     component={FeedScreen}
@@ -26,11 +26,13 @@ const Navigator = () => {
                         ),
                     })}
                 />
+
+                <Stack.Screen name='Create Post' component={CreatePostScreen} />
+                <Stack.Screen name='Profile' component={ProfileScreen} />
                 <Stack.Screen
                     name='Update Profile'
                     component={UpdateProfileScreen}
                 />
-                <Stack.Screen name='Create Post' component={CreatePostScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
