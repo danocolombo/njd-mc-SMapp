@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     name: {
         fontWeight: '500',
     },
-    input: {},
+    input: { marginBottom: 'auto' },
     buttonContainer: {
         marginTop: 'auto',
     },
